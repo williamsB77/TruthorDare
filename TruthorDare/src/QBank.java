@@ -15,6 +15,10 @@ public class QBank {
 		aBank.add(e);
 	}
 	
+	public void remove(String f) {
+		aBank.remove(f);
+	}
+	
 	public void change(int x, int y) {
 		// Switches the position of 2 questions in the bank
 		if (x<aBank.size() && y<aBank.size()) {
