@@ -11,6 +11,10 @@ public class QBank {
 		aBank = new ArrayList<String>();
 	}
 	
+	public void add(String e) {
+		aBank.add(e);
+	}
+	
 	public void change(int x, int y) {
 		// Switches the position of 2 questions in the bank
 		if (x<aBank.size() && y<aBank.size()) {
@@ -27,6 +31,15 @@ public class QBank {
 		if (aBank.isEmpty() != true) {
 			String first = aBank.get(0);
 			return first;
+		} else {
+			return null;
+		}
+	}
+	
+	public String view(int a) {
+		if (aBank.isEmpty() != true) {
+			String s = aBank.get(a);
+			return s;
 		} else {
 			return null;
 		}
